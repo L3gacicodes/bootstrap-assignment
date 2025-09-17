@@ -1,0 +1,38 @@
+
+body {
+  scroll-behavior: smooth;
+  background-image: url(Assets/trbody1.jpg);
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+
+.hero {
+  background: url(Assets/Tr\ Hero\ 2\(1\).jpg) no-repeat center center/cover;
+  height: 70vh;
+  rotate: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+footer {
+  background: #222;
+}
